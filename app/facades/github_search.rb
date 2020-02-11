@@ -15,6 +15,12 @@ class GithubSearch
     get_json('followers').take(5)
   end
 
+  def get_email(github_handle)
+    service = GithubService.new
+    user_info = service.get_json("/users/#{github_handle}?access_token=#{@token}")
+    user_info[:email]
+  end
+
   def find_github_resource(data_type, data)
     resource = data_type.singularize.capitalize
     resource.constantize.new(data)
