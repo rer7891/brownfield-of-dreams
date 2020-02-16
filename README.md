@@ -1,6 +1,6 @@
 # Brownfield Of Dreams
 
-**Learning Goal**
+**Learning Goals**
 
 Working within an  already established code base to implement the following:
   * Integrate Github Oauth to verify a user's identity and consume Github's API
