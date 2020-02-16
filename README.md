@@ -1,18 +1,15 @@
 # Brownfield Of Dreams
 
-This is the base repo for a brownfield project used at Turing for Backend Mod 3.
+**Learning Goal**
 
-Project Spec and Evaluation Rubric: https://github.com/turingschool-examples/brownfield-of-dreams
-
-### Project Board
-
-Students will continue to build on the existing code base using the cards within the following Github Project: https://github.com/turingschool-examples/brownfield-of-dreams/projects/1
-
-**Learning Goals and Labels**
-
-The cards are labeled in a way that correspond to learning goals or to specific areas you might personally want to focus on.
-
-Cards should be completed from top to bottom in the To Do column. Cards labeled `good first issue` are good as filler work and will allow you to practice common Rails skills.
+Working within an  already established code base to implement the following:
+  * Integrate Github Oauth to verify a user's identity and consume Github's API
+    to display a user's github repos, followers and following users.
+  * Establish a self referential relationship in the User model to friend other
+    users within the database.
+  * Use email verification to activate an account.
+  * Use email to invite friends with a Github account to register for an account
+    with our app.
 
 ### About the Project
 
@@ -22,7 +19,7 @@ A visitor is able to see all of the content on the application but in order to b
 
 ## Local Setup
 
-First you'll need to setup an API key with YouTube and have it defined within `ENV['YOUTUBE_API_KEY']`. There will be one failing spec if you don't have this set up.
+First you'll need to setup an API key with YouTube and have it defined within ENV['YOUTUBE_API_KEY']. Using the developer settings in github register your app with github for a clientid and secret for Oauth access: ENV['GITHUB_CLIENT_ID'], ENV['GITHUB_CLIENT_SECRET']
 
 Clone down the repo
 ```
